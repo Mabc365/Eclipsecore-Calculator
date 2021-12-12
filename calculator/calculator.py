@@ -1,7 +1,7 @@
-from numericOperations.addition import *
-from numericOperations.subtraction import *
-from numericOperations.multiplication import *
-from numericOperations.division import *
+from Operations.addition import *
+from Operations.subtraction import *
+from Operations.multiplication import *
+from Operations.division import *
 
 class root:
 
