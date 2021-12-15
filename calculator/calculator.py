@@ -54,6 +54,47 @@ class root:
             root.fractionRoot()
 
 class calculator:
+
+    def fractions():
+        op = input("Operation; | + | - | x | **| sqrt  | / |: ")
+
+        if (op == "+"):
+            fractionAddition.fractionAddition()
+        elif (op == "-"):
+            fractionSubtraction.fractionSubtraction()
+        elif (op == "x"):
+            fractionMultiplication.fractionMultiplication()
+        elif (op == "**"):
+            fractionPowers.fractionPowers()
+        elif (op == "sqrt"):
+            fractionSqrt.fractionSqrt()
+        elif (op == "/"):
+            fractionDivision.fractionDivision()
+        else:
+            root.fractionRoot()
+
+    def normal():
+        op = input("Operation; | + | - | x | **| sqrt  | / | /r | f |: ")
+
+        if (op == "+"):
+            floatAddition.addition()
+        elif (op == "-"):
+            floatSubtraction.subtraction()
+        elif (op == "x"):
+            floatMultiplication.multiplication()
+        elif (op == "**"):
+            floatPowers.power()
+        elif (op == "sqrt"):
+            floatSqrt.sqrt()
+        elif (op == "/"):
+            floatDivision.division()
+        elif (op == "/r"):
+            floatDivisionWithRemainder.divisionWithRemainder()
+        elif (op == "f"):
+            calculator.fractions()
+        else:
+            root.root()
+
     def calculator():
 
         op = input("Operation; | + | - | x | **| sqrt  | / | /r | f |: ")
@@ -75,7 +116,7 @@ class calculator:
         elif (op == "f"):
             root.fractionRoot()
         else:
-            root.root()
+            calculator.normal()
 
 
 
