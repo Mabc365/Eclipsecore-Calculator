@@ -1,2 +1,0 @@
-language = "cgi"
-run = "python calculator/index.cgi"
