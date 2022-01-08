@@ -1,7 +1,3 @@
-import cgitb
-cgitb.enable()
-
-
 print(
             """
  _____        _  _                                                ____         _               _         _               
