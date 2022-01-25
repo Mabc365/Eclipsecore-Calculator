@@ -1,7 +1,3 @@
-import cgitb
-cgitb.enable()
-
-
 print(
             """
  _____        _  _                                                ____         _               _         _               
@@ -40,19 +36,19 @@ class root:
         op = input("Operation; | + | - | x | **| sqrt  | / | /r | f |: ")
 
         if (op == "+"):
-            floatAddition.addition()
+            numericAddition()
         elif (op == "-"):
-            floatSubtraction.subtraction()
+            numericSubtraction()
         elif (op == "x"):
-            floatMultiplication.multiplication()
+            numericMultiplication()
         elif (op == "**"):
-            floatPowers.power()
+            numericPowers()
         elif (op == "sqrt"):
-            floatSqrt.sqrt()
+            numericSqrt()
         elif (op == "/"):
-            floatDivision.division()
+            numericDivision()
         elif (op == "/r"):
-            floatDivisionWithRemainder.divisionWithRemainder()
+            numericDivisionWithRemainder
         elif (op == "f"):
             root.fractionRoot()
 
