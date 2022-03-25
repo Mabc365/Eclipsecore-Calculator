@@ -1,49 +1,41 @@
 import fractions
 
-class floatDivision:
-    def division():
-        a = float(input("Dividend: "))
-        b = float(input("Divisor: "))
-        c = float(a/b)
+def numericDivision():
+    a = float(input("Dividend: "))
+    b = float(input("Divisor: "))
+    c = a/b
 
-        a = str(a)
-        b = str(b)
-        c = str(c)
+    a = str(a)
+    b = str(b)
+    c = str(c)
 
-        d = (a + " ÷ " + b + " = " + c)
+    d = (a + " ÷ " + b + " = " + c)
 
-        print(d)
+    print(d)
 
-class floatDivisionWithRemainder:
-    def divisionWithRemainder():
-        a = float(input("Dividend: "))
-        b = float(input("Divisor: "))
-        c = float(a/b)
-        d = int(a%b)
+def numericDivisionWithRemainder():
+    a = float(input("Dividend: "))
+    b = float(input("Divisor: "))
+    c = a%b
+    d = a/b
 
-        a = str(a)
-        b = str(b)
-        c = str(c)
-        d = str(d)
+    a = str(a)
+    b = str(b)
+    c = str(c)
 
-        e = (a + " ÷ " + b + " = " + c + " R " + d)
+    d = (a + " ÷ " + b + " = " + d + " R " + c)
 
-        print(e)
+    print(d)
 
-class fractionDivision:
-    def fractionDivision():
-        a1 = int(input("Numerator of Dividend: "))
-        a2 = int(input("Denominator of Dividend: "))
-        b1 = int(input("Numerator of Divisor: "))
-        b2 = int(input("Denominator of Divisor: "))
-        a = fractions.Fraction(a1, a2)
-        b = fractions.Fraction(b1, b2)
-        c = fractions.Fraction(a/b)
+def fractionDivision():
+    a = fractions.Fraction(input("Dividend: "))
+    b = fractions.Fraction(input("Divisor: "))
+    c = a/b
 
-        a = str(a)
-        b = str(b)
-        c = str(c)
+    a = str(a)
+    b = str(b)
+    c = str(c)
 
-        d = (a + " ÷ " + b + " = " + c)
+    d = (a + " ÷ " + b + " = " + c)
 
-        print(d)
+    print(d)
