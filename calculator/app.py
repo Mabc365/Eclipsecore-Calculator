@@ -15,110 +15,78 @@ from Operations.multiplication import *
 from Operations.division import *
 from Operations.exponentiation import *
 
-class root:
+def fractionRoot():
+        o = input("Operation; | + | - | x | ^ | sqrt | / |: ")
 
-    def fractionRoot():
-        op = input("Operation; | + | - | x | ^ | sqrt  | / |: ")
-
-        if (op == "+"):
-            fractionAddition.fractionAddition()
-        elif (op == "-"):
-            fractionSubtraction.fractionSubtraction()
-        elif (op == "x"):
-            fractionMultiplication.fractionMultiplication()
-        elif (op == "^"):
-            floatPowers.power()
-        elif (op == "sqrt"):
-            fractionSqrt.fractionSqrt()
-        elif (op == "/"):
-            fractionDivision.fractionDivision()
-
-    def root():
-        op = input("Operation; | + | - | x | ^ | sqrt  | / | /r | f |: ")
-
-        if (op == "+"):
-            numericAddition()
-        elif (op == "-"):
-            numericSubtraction()
-        elif (op == "x"):
-            numericMultiplication()
-        elif (op == "^"):
-            numericPowers()
-        elif (op == "sqrt"):
-            numericSqrt()
-        elif (op == "/"):
-            numericDivision()
-        elif (op == "/r"):
-            numericDivisionWithRemainder
-        elif (op == "f"):
-            root.fractionRoot()
-
-class calculator:
-
-    def fractions():
-        op = input("Operation; | + | - | x | ^ | sqrt  | / |: ")
-
-        if (op == "+"):
-            fractionAddition.fractionAddition()
-        elif (op == "-"):
-            fractionSubtraction.fractionSubtraction()
-        elif (op == "x"):
-            fractionMultiplication.fractionMultiplication()
-        elif (op == "^"):
-            fractionPowers.fractionPowers()
-        elif (op == "sqrt"):
-            fractionSqrt.fractionSqrt()
-        elif (op == "/"):
-            fractionDivision.fractionDivision()
+        if o == "+":
+            fractionAddition()
+        elif o == "-":
+            fractionSubtraction()
+        elif o == "x":
+            fractionMultiplication()
+        elif o == "^":
+            fractionPowers()
+        elif o == "sqrt":
+            fractionSqrt()
         else:
-            root.fractionRoot()
+            if o == "/":
+                fractionDivision()
+    
+def numericRoot():
+    o = input("Operation; | + | - | x | ^ | sqrt | / | f |: ")
 
-    def normal():
-        op = input("Operation; | + | - | x | ^ | sqrt  | / | /r | f |: ")
+    if o == "+":
+        numericAddition()
+    elif o == "-":
+        numericSubtraction()
+    elif o == "x":
+        numericMultiplication()
+    elif o == "^":
+        numericPowers()
+    elif o == "sqrt":
+        numericSqrt()
+    elif o == "/":
+        numericDivision()
+    elif o == "f":
+        fractionRoot()
 
-        if (op == "+"):
-            floatAddition.addition()
-        elif (op == "-"):
-            floatSubtraction.subtraction()
-        elif (op == "x"):
-            floatMultiplication.multiplication()
-        elif (op == "^"):
-            floatPowers.power()
-        elif (op == "sqrt"):
-            floatSqrt.sqrt()
-        elif (op == "/"):
-            floatDivision.division()
-        elif (op == "/r"):
-            floatDivisionWithRemainder.divisionWithRemainder()
-        elif (op == "f"):
-            calculator.fractions()
-        else:
-            root.root()
+def fractionOP():
+    o = input("Operation; | + | - | x | ^ | sqrt | / |: ")
 
-    def calculator():
+    if o == "+":
+        fractionAddition()
+    elif o == "-":
+        fractionSubtraction()
+    elif o == "x":
+        fractionMultiplication()
+    elif o == "^":
+        fractionPowers()
+    elif o == "sqrt":
+        fractionSqrt()
+    elif o == "/":
+        fractionDivision()
+    else:
+        numericRoot()
 
-        op = input("Operation; | + | - | x | ^ | sqrt  | / | /r | f |: ")
+def numericOP():
+    o = input("Operation; | + | - | x | ^ | sqrt | / | f |: ")
 
-        if (op == "+"):
-            floatAddition.addition()
-        elif (op == "-"):
-            floatSubtraction.subtraction()
-        elif (op == "x"):
-            floatMultiplication.multiplication()
-        elif (op == "^"):
-            floatPowers.power()
-        elif (op == "sqrt"):
-            floatSqrt.sqrt()
-        elif (op == "/"):
-            floatDivision.division()
-        elif (op == "/r"):
-            floatDivisionWithRemainder.divisionWithRemainder()
-        elif (op == "f"):
-            root.fractionRoot()
-        else:
-            calculator.normal()
-
-
+    if o == "+":
+        numericAddition()
+    elif o == "-":
+        numericSubtraction()
+    elif o == "x":
+        numericMultiplication()
+    elif o == "^":
+        numericPowers()
+    elif o == "sqrt":
+        numericSqrt()
+    elif o == "/":
+        numericDivision()
+    elif o == "f":
+        fractionOP()
+    else:
+        numericRoot()
 
 while True:
-    calculator.calculator()
+    numericOP()

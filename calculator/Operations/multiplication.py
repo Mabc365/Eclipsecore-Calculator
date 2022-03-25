@@ -11,6 +11,8 @@ def numericMultiplication():
 
     d = (a + " × " + b + " = " + c)
 
+    print(d)
+
 def fractionMultiplication():
     a = fractions.Fraction(input("Multiplicand: "))
     b = fractions.Fraction(input("Multiplier: "))
@@ -21,3 +23,5 @@ def fractionMultiplication():
     c = str(c)
 
     d = (a + " × " + b + " = " + c)
+
+    print(d)

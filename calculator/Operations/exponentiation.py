@@ -1,57 +1,50 @@
-class floatPowers:
-    def power():
-        a = float(input("Base: "))
-        b = float(input("Power: "))
-        c = float(a^b)
+import math
+import fractions
 
-        a = str(a)
-        b = str(b)
-        c = str(c)
+def numericPowers():
+    a = float(input("Base: "))
+    b = float(input("Exponent: "))
+    c = a**b
 
-        d = (a + "^" + b + " = " + c)
+    a = str(a)
+    b = str(b)
+    c = str(c)
 
-        print(d)
+    d = (a + " ^ " + b + " = " + c)
 
-class floatSqrt:
-    def sqrt():
-        a = float(input("Radicand: "))
-        b = float(math.sqrt(a))
+    print(d)
 
-        a = str(a)
-        b = str(b)
+def fractionPowers():
+    a = fractions.Fraction(input("Base: "))
+    b = fractions.Fraction(input("Exponent: "))
+    c = a**b
 
-        c = ("√" + a + " = " + b)
+    a = str(a)
+    b = str(b)
+    c = str(c)
 
-        print(c)
+    d = (a + " ^ " + b + " = " + c)
 
-class fractionPowers:
-    def fractionPowers():
-        a1 = int(input("Numerator of Base: "))
-        a2 = int(input("Denominator of Base: "))
-        b1 = int(input("Numerator of Power: "))
-        b2 = int(input("Denominator of Power: "))
-        a = fractions.Fraction(a1, a2)
-        b = fractions.Fraction(b1, b2)
-        c = fractions.Fraction(a**b)
+    print(d)
 
-        a = str(a)
-        b = str(b)
-        c = str(c)
+def numericSqrt():
+    a = float(input("Radicand: "))
+    b = math.sqrt(a)
 
-        d = (a + "**" + b + " = " + c)
+    a = str(a)
+    b = str(b)
 
-        print(d)
+    d = ("√" + a + " = " + b)
 
-class fractionSqrt:
-    def fractionSqrt():
-        a1 = int(input("Numerator of Radicand: "))
-        a2 = int(input("Denominator of Radicand: "))
-        a = fractions.Fraction(a1, a2)
-        b = fractions.Fraction(math.sqrt(a))
+    print(d)
 
-        a = str(a)
-        b = str(b)
+def fractionSqrt():
+    a = fractions.Fraction(input("Radicand: "))
+    b = fractions.Fraction(math.sqrt(a))
 
-        c = ("√" + a + " = " + b)
+    a = str(a)
+    b = str(b)
 
-        print(c)
+    d = ("√" + a + " = " + b)
+
+    print(d)
