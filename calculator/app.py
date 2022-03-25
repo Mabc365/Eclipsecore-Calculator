@@ -33,7 +33,7 @@ def fractionRoot():
                 fractionDivision()
     
 def numericRoot():
-    o = input("Operation; | + | - | x | ^ | sqrt | / | f |: ")
+    o = input("Operation; | + | - | x | ^ | sqrt | / | /r | f |: ")
 
     if o == "+":
         numericAddition()
@@ -47,6 +47,8 @@ def numericRoot():
         numericSqrt()
     elif o == "/":
         numericDivision()
+    elif o == "/r":
+        numericDivisionWithRemainder()
     elif o == "f":
         fractionRoot()
 
@@ -69,7 +71,7 @@ def fractionOP():
         numericRoot()
 
 def numericOP():
-    o = input("Operation; | + | - | x | ^ | sqrt | / | f |: ")
+    o = input("Operation; | + | - | x | ^ | sqrt | / | /r | f |: ")
 
     if o == "+":
         numericAddition()
@@ -85,6 +87,8 @@ def numericOP():
         numericDivision()
     elif o == "f":
         fractionOP()
+    elif o == "/r":
+        numericDivisionWithRemainder()
     else:
         numericRoot()
 

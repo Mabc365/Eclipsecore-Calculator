@@ -15,7 +15,7 @@ AppUpdatesURL=https://www.eclipsecore.net/
 DefaultDirName={autopf}\Eclipsecore Calculator
 DisableProgramGroupPage=yes
 LicenseFile=C:\github\Eclipsecore-Calculator\calculator\liscence.txt
-; Remove the following line to run in administrative install mode (install for all users.)
+; Remove the following line to run min administrative install mode (install for all users.)
 PrivilegesRequired=lowest
 OutputDir=C:\Users\musta\Downloads
 OutputBaseFilename=calculatorv2install
