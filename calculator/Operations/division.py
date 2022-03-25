@@ -1,18 +1,17 @@
 import fractions
 
-class floatDivision:
-    def division():
-        a = float(input("Dividend: "))
-        b = float(input("Divisor: "))
-        c = float(a/b)
+def numericDivision():
+    a = float(input("Dividend: "))
+    b = float(input("Divisor: "))
+    c = a/b
 
-        a = str(a)
-        b = str(b)
-        c = str(c)
+    a = str(a)
+    b = str(b)
+    c = str(c)
 
-        d = (a + " ÷ " + b + " = " + c)
+    d = (a + " ÷ " + b + " = " + c)
 
-        print(d)
+    print(d)
 
 class floatDivisionWithRemainder:
     def divisionWithRemainder():
