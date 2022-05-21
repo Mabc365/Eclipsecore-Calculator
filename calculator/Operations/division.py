@@ -22,6 +22,7 @@ def numericDivisionWithRemainder():
     a = str(a)
     b = str(b)
     c = str(c)
+    d = str(d)
 
     d = (a + " ÷ " + b + " = " + d + " R " + c)
 
